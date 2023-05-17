@@ -8,6 +8,7 @@ import com.example.architecture_pattern_sample.databinding.ActivityMainBinding
 import com.example.architecture_pattern_sample.mvc.controller.MvcLoginActivity
 import com.example.architecture_pattern_sample.mvp.view.MvpLoginActivity
 import com.example.architecture_pattern_sample.mvp.view.MvpLoginView
+import com.example.architecture_pattern_sample.mvvm.view.MvvmLoginActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding :ActivityMainBinding
@@ -33,7 +34,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)  // 화면 전환을 시켜줌
             finish()
         }
-
+        binding.btnMvvm.setOnClickListener{
+            val intent = Intent(this, MvvmLoginActivity::class.java)  // 인텐트를 생성해줌,
+            startActivity(intent)  // 화면 전환을 시켜줌
+            finish()
+        }
     }
 
 }

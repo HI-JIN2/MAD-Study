@@ -13,7 +13,21 @@
         android:theme="@style/Theme.Architecturepatternsample"
         tools:targetApi="31">
         <activity
-            android:name=".MvcLoginActivity"
+            android:name=".mvvm.view.MvvmLoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mvc.controller.MvcLoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mvp.view.MvpLoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
