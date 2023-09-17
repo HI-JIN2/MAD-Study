@@ -14,8 +14,8 @@ login을 예시로 각 패턴에 대한 이해를 합니다.
 
 ## [Book Search App](https://github.com/HI-JIN2/MAD-Study/tree/main/book-search-app)
 
-
-com.eatssu.android
+```
+com.example.booksearchapp
 ├── data
 │   ├── api
 │   │   ├── service
@@ -26,5 +26,6 @@ com.eatssu.android
 │   └── repository
 ├── ui
 │   ├── view
-│   ├── viewmodel
+│   └── viewmodel
 └── util
+```
